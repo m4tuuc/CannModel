@@ -2,8 +2,6 @@ fastapi
 uvicorn
 torch
 transformers
-pydantic
-python-multipart
 datasets
 streamlit
 pandas
