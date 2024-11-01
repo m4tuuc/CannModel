@@ -59,6 +59,8 @@ Ejecuta la API:
 
 La API estara disponible en http://127.0.0.1:8000, la documentación interactiva se encuentra en http://127.0.0.1:8000/docs.
 
+Para ejecutarlo: `python streamlit run app.py`
+
 
 ## Estructura del Proyecto
 
