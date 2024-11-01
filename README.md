@@ -1,4 +1,4 @@
-# Recomendador de Cepas de Cannabis basados en imput (TEST)
+# Recomendador de Cepas de Cannabis basados en input (TEST)
 
 Este proyecto es una API basado en FastAPI que recomienda cepas de cannabis basadas en descripciones proporcionadas por el usuario. Utiliza un modelo BERT entrenado para clasificar y predecir la cepa más relevante según la descripción ingresada.
 
