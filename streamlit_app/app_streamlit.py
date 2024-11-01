@@ -19,6 +19,7 @@ def get_prediction(description):
         )
         return response.json()
     except Exception as e:
+        st.error(f"Error al conectarse a la API: {e}")
         return None
 
 def main():
@@ -37,7 +38,7 @@ def main():
     if st.button("Obtener Recomendación", type="primary"):
         if description:
             # Obtener la recomendación desde la API de FastAPI
-            result = obtener_recomendacion(description)
+            result = get_prediction(description)
 
             if result:
                 # Mostrar resultados
@@ -56,7 +57,7 @@ def main():
                 col3, col4 = st.columns(2)
 
                 with col3:
-                    st.subheader("🎯 Efectos")
+                    st.subheader("Efectos")
                     for effect in result['effects']:
                         st.write(f"• {effect}")
 
