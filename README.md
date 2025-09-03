@@ -4,8 +4,8 @@ A machine learning-powered web application that classifies cannabis strains into
 
 ## Features
 
-- **AI-Powered Classification**: Uses BERT-based transformer model for accurate strain prediction
-- **Interactive Web Interface**: Clean, user-friendly Gradio interface
+- **Classification**: Uses BERT-based transformer model for accurate strain prediction
+- **Chat Interface**: Clean, user-friendly Gradio interface
 - **Strain Recommendations**: Provides detailed strain information including effects, flavors, and descriptions
 - **Real-time Processing**: Instant predictions with confidence scores
 - **Multi-language Support**: Optimized for English descriptions
