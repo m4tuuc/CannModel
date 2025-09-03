@@ -1,7 +1,9 @@
 🌿 Cannabis Strain Recommendation System
 
 A machine learning-powered web application that classifies cannabis strains into Sativa, Indica, or Hybrid categories based on user descriptions. Built with BERT transformer model and LoRA fine-tuning for optimal performance.
+
 Try it! 👇🏻
+
 [![Hugging Face Space](https://img.shields.io/badge/Hugging%20Face-Space-blue?logo=huggingface)](https://huggingface.co/spaces/M4tuuc/CannModel)  
 
 ## Features
