@@ -1,0 +1,51 @@
+{
+  "model_name": "dccuchile/bert-base-spanish-wwm-uncased",
+  "lora_config": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.1,
+    "target_modules": [
+      "query",
+      "value",
+      "key",
+      "dense"
+    ]
+  },
+  "training_args": {
+    "input_file": "cannabis.csv",
+    "output_dir": "results/final_model",
+    "epochs": 5,
+    "batch_size": 16,
+    "eval_batch_size": 32,
+    "learning_rate": 0.0002,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "model_name": "dccuchile/bert-base-spanish-wwm-uncased",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "early_stopping_patience": 3,
+    "use_cv": true,
+    "cv_folds": 5,
+    "augment_data": false,
+    "scheduler_type": "cosine"
+  },
+  "final_metrics": {
+    "eval_loss": 0.47530466318130493,
+    "eval_accuracy": 0.7914893617021277,
+    "eval_f1_macro": 0.7836237288243354,
+    "eval_f1_weighted": 0.7928090272486603,
+    "eval_precision": 0.7980273444200267,
+    "eval_recall": 0.7914893617021277,
+    "eval_runtime": 16.511,
+    "eval_samples_per_second": 28.466,
+    "eval_steps_per_second": 0.908,
+    "epoch": 5.0
+  },
+  "label_mapping": {
+    "sativa": 0,
+    "indica": 1,
+    "hybrid": 2
+  },
+  "timestamp": "2025-08-28T22:05:19.198540"
+}
